@@ -1,5 +1,6 @@
 package hello;
 
+import java.io.File;
 import java.text.Format;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -40,18 +41,19 @@ public class Hello {
 		System.out.println("Livre : " + unLivre.titre() + " resumé : " + unLivre.resume() + " nbPages : " + unLivre.nbPages());
 		
 		
-		String pattern = "yyyy-MM-dd";
-		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-		Date date = simpleDateFormat.parse("2020-01-02");
-		Auteur hugo = Auteur.getAuteur("Hugo", "Victor", simpleDateFormat.parse("2020-09-09"));
+//		String pattern = "yyyy-MM-dd";
+//		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
+//		Date date = simpleDateFormat.parse("2020-01-02");
+//		Auteur hugo = Auteur.getAuteur("Hugo", "Victor", simpleDateFormat.parse("2020-09-09"));
 		
-		if (hugo == null) {
-			System.out.println("Impossible d'instancier l'objet");
-		} else {
-			System.out.println("Auteur : " + hugo.nom() + hugo.dateNaissance());
-		}
-		
-		System.out.println(alien.getPrixLocation(4, 20));
+//		if (hugo == null) {
+//			System.out.println("Impossible d'instancier l'objet");
+//		} else {
+//			System.out.println("Auteur : " + hugo.nom() + hugo.dateNaissance());
+//		}
+//		
+//		System.out.println(alien.getPrixLocation(4, 20));
+//		
 		
 		
 	}
